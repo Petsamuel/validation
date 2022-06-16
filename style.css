@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Montserrat&family=Sofia&display=swap");
+:root {
+    --primary-Red: hsl(0, 100%, 74%);
+    --primary-Green: hsl(154, 59%, 51%);
+    --accent-Blue: hsl(248, 32%, 49%);
+    --neutral-Dark-Blue: hsl(249, 10%, 26%);
+    --neutral-Grayish-Blue: hsl(246, 25%, 77%);
+    --body-Font-size: 16px;
+    --font-family: Poppins;
+    --Mobile-background: url('./img/bg-intro-mobile.png'), var(--primary-Red);
+    --desktop-background: url('./img/bg-intro-desktop.png'), var(--primary-Red);
+    --icon-error: url('./img/icon-error.svg') no-repeat scroll right 15px center;
+}
+
+*,
+html,
+::after,
+::before {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family);
+}
+
+body {
+    background: var(--Mobile-background);
+    font-family: var(--font-family);
+}
+
+main {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 10%;
+}
+
+.container-fluid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 3fr);
+    width: screen;
+}
+
+.intro-text {
+    font-size: larger;
+}
+
+.top-form {
+    background: var(--accent-Blue);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 1px rgba(48, 48, 48, 0.537);
+    margin: 10px auto;
+}
+
+.top-text {
+    font-size: small;
+}
+
+.pattern {
+    grid-column: 1/2;
+    color: white;
+    align-self: center;
+    justify-items: center;
+}
+
+.form-area {
+    grid-column: 2/3;
+}
+
+.form-content {
+    margin-bottom: 40px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0px 4px 1px rgba(48, 48, 48, 0.537);
+}
+
+form {
+    display: grid;
+    grid-template: max-content;
+    gap: 15px;
+    padding: 15px;
+    margin: 10px 12px;
+}
+
+form>p {
+    padding: 4px;
+    color: var(--neutral-Grayish-Blue);
+}
+
+.terms>span {
+    color: var(--primary-Red);
+}
+
+.last {
+    color: var(--neutral-Grayish-Blue);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: smaller;
+    font-weight: 400;
+}
+
+.text-info {
+    text-align: justify;
+    font-size: small;
+    font-weight: 400;
+}
+
+.seprator {
+    padding-top: 0.5em;
+}
+
+input {
+    margin-top: -4px;
+    padding: 20px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--neutral-Grayish-Blue);
+    outline: var(--accent-Blue);
+    outline-offset: 4pt;
+}
+
+input:focus-visible {
+    outline: var(--accent-Blue);
+    box-shadow: 0px 1px 1px var(--accent-Blue);
+}
+
+.seprator:target input:invalid {
+    outline: var(--primary-Red);
+    box-shadow: 0px 1px 1px var(--primary-Red);
+}
+
+label {
+    visibility: hidden;
+    margin-top: -15px;
+    text-align: right;
+    color: var(--primary-Red);
+    font-size: small;
+}
+
+#tem {
+    color: var(--primary-Red);
+}
+
+.seprator:target input:invalid:required,
+.seprator:target input:not(:required) {
+    border-color: var(--primary-Red);
+    border-width: 2.3px;
+    background: var(--icon-error);
+    background-size: 18px;
+}
+
+.seprator:target input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.seprator:target input:invalid~label,
+.seprator:target input:invalid:active {
+    visibility: visible;
+}
+
+.seperator input:active:focus:invalid {
+    outline: var(--primary-Red);
+    box-shadow: 0px 1px 1px var(--primary-Red);
+}
+
+#user-hint {
+    text-align: left;
+    font-size: smaller;
+    margin-top: -55px;
+    color: var(--primary-Red);
+}
+
+#user-hint~input:focus {
+    display: none;
+}
+
+button {
+    background-color: var(--primary-Green);
+    border: none;
+    height: 50px;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(154, 71%, 66%);
+}
+
+
+/***** mobile design *****/
+
+@media screen and (max-width:480px) {
+    body {
+        background: var(--Mobile-background);
+    }
+    .container-fluid {
+        display: block;
+    }
+    .pattern {
+        text-align: center;
+        justify-content: center;
+        color: white;
+        margin: 25% auto;
+    }
+    .text-info {
+        text-align: center;
+    }
+}
+
+
+/***** ipads/tablet screen *****/
+
+@media screen and (max-width:768px) and (min-width:481px) {
+    body {
+        background: var(--Mobile-background);
+    }
+    .container-fluid {
+        display: block;
+    }
+    .pattern {
+        text-align: center;
+        justify-content: center;
+        color: white;
+        margin: 25% auto;
+    }
+    .text-info {
+        text-align: center;
+    }
+}
+
+
+/***** End ipads/tablet screen *****/
+
+
+/***** End mobile design *****/
