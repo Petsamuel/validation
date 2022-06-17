@@ -84,11 +84,9 @@ form {
     margin: 10px 12px;
 }
 
-
-/* form>p {
-    padding: 4px;
-    color: var(--neutral-Grayish-Blue);
-} */
+form input {
+    width: 100%;
+}
 
 .terms>span {
     color: var(--primary-Red);
@@ -126,8 +124,7 @@ input {
 
 label {
     visibility: hidden;
-    margin-top: -15px;
-    text-align: right;
+    float: right;
     color: var(--primary-Red);
     font-size: small;
 }
@@ -245,7 +242,6 @@ form input {
         padding: 10px 20px;
         margin: 10px auto;
     }
-    input {}
     a[href="#validate"] .trial {
         font-size: 11;
     }
@@ -277,7 +273,6 @@ form input {
     .text-info {
         text-align: center;
     }
-    input {}
     a[href="#validate"] .trial {
         font-size: 11;
     }
