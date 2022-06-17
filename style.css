@@ -78,8 +78,8 @@ main {
 }
 
 form {
-    display: grid;
-    grid-template: max-content;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
     padding: 15px;
     margin: 10px 12px;
