@@ -165,9 +165,6 @@ input:focus-visible {
     box-shadow: 0px 1px 1px var(--primary-Red);
 }
 
-
-/***** bieefilled *****/
-
 #tem {
     color: var(--primary-Red);
 }
@@ -183,12 +180,20 @@ input:focus-visible {
     display: none;
 }
 
-button {
+a[href="#validate"] {
+    text-align: center;
     background-color: var(--primary-Green);
-    border: none;
+    box-shadow: 1px 1px 2px hsl(249, 10%, 26%);
     height: 50px;
     text-transform: uppercase;
     border-radius: 6px;
+    align-content: center;
+    padding-bottom: 3;
+}
+
+a[href="#validate"] .trial {
+    display: inline-flex;
+    padding-top: 17px;
 }
 
 a {
@@ -196,7 +201,7 @@ a {
     color: white;
 }
 
-button:hover {
+a[href="#validate"]:hover {
     cursor: pointer;
     background-color: hsl(154, 71%, 66%);
 }
