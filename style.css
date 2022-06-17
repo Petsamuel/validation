@@ -194,7 +194,7 @@ a[href="#validate"] {
 }
 
 a[href="#validate"] .trial {
-    display: inline-flex;
+    display: block;
     padding-top: 17px;
 }
 
@@ -214,6 +214,10 @@ a[href="#validate"]:hover {
 
 .form-content {
     width: fit-content;
+}
+
+form input {
+    display: block;
 }
 
 
@@ -248,6 +252,9 @@ a[href="#validate"]:hover {
     label {
         color: var(--primary-Red);
         font-size: x-small;
+    }
+    form input {
+        display: block;
     }
 }
 
