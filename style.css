@@ -109,7 +109,8 @@ form>p {
 }
 
 .seprator {
-    padding-top: 0.5em;
+    padding: 0.5em;
+    margin: 0.5em;
 }
 
 input {
@@ -120,6 +121,7 @@ input {
     border: 1px solid var(--neutral-Grayish-Blue);
     outline: var(--accent-Blue);
     outline-offset: 4pt;
+    display: flexbox;
 }
 
 label {
@@ -237,6 +239,7 @@ a[href="#validate"]:hover {
         display: grid;
         flex-direction: column;
         gap: 15px;
+        margin: 5rem;
     }
     .top-form {
         background: var(--accent-Blue);
