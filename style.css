@@ -248,6 +248,13 @@ a[href="#validate"]:hover {
     input {
         contain: content;
     }
+    a[href="#validate"] .trial {
+        font-size: 11;
+    }
+    label {
+        color: var(--primary-Red);
+        font-size: x-small;
+    }
 }
 
 
@@ -276,6 +283,9 @@ a[href="#validate"]:hover {
     }
     input {
         width: max-content;
+    }
+    a[href="#validate"] .trial {
+        font-size: 11;
     }
 }
 
