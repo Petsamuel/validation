@@ -194,7 +194,7 @@ a[href="#validate"] {
 }
 
 a[href="#validate"] .trial {
-    display: block;
+    display: inline-block;
     padding-top: 17px;
 }
 
@@ -217,7 +217,7 @@ a[href="#validate"]:hover {
 }
 
 form input {
-    display: block;
+    display:inline-block;
 }
 
 
@@ -254,7 +254,7 @@ form input {
         font-size: x-small;
     }
     form input {
-        display: block;
+        display: inline-block;
     }
 }
 
