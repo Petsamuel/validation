@@ -244,14 +244,16 @@ a[href="#validate"]:hover {
         color: white;
         padding: 10px 20px;
         margin: 10px auto;
-        width: fit-content;
+    }
+    input {
+        contain: content;
     }
 }
 
 
 /***** ipads/tablet screen *****/
 
-@media only screen and (max-width:768px) {
+@media only screen and (min-width:256px) and (max-width:768px) {
     body {
         background: var(--Mobile-background);
     }
@@ -272,10 +274,16 @@ a[href="#validate"]:hover {
         flex-direction: column;
         gap: 15px;
     }
+    input {
+        width: max-content;
+    }
 }
 
 
 /***** End ipads/tablet screen *****/
+
+
+/***** End mobile design *****/
 
 
 /***** End mobile design *****/
