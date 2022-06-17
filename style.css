@@ -35,9 +35,9 @@ main {
 }
 
 .container-fluid {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    grid-template-columns: repeat(2, 3fr);
 }
 
 .intro-text {
