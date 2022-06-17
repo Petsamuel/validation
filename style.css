@@ -36,8 +36,8 @@ main {
 
 .container-fluid {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
 }
 
 .intro-text {
@@ -67,7 +67,7 @@ main {
 }
 
 .form-area {
-    grid-column: 1/3;
+    grid-column: 1;
 }
 
 .form-content {
