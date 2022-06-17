@@ -122,16 +122,6 @@ input {
     outline-offset: 4pt;
 }
 
-input:focus-visible {
-    outline: var(--accent-Blue);
-    box-shadow: 0px 1px 1px var(--accent-Blue);
-}
-
-.seprator:target input:invalid {
-    outline: var(--primary-Red);
-    box-shadow: 0px 1px 1px var(--primary-Red);
-}
-
 label {
     visibility: hidden;
     margin-top: -15px;
@@ -140,8 +130,17 @@ label {
     font-size: small;
 }
 
-#tem {
-    color: var(--primary-Red);
+input:focus-visible {
+    outline: var(--accent-Blue);
+    box-shadow: 0px 1px 1px var(--accent-Blue);
+}
+
+
+/***** css checker *****/
+
+.seprator:target input:invalid {
+    outline: var(--primary-Red);
+    box-shadow: 0px 1px 1px var(--primary-Red);
 }
 
 .seprator:target input:invalid:required,
@@ -164,6 +163,13 @@ label {
 .seperator input:active:focus:invalid {
     outline: var(--primary-Red);
     box-shadow: 0px 1px 1px var(--primary-Red);
+}
+
+
+/***** bieefilled *****/
+
+#tem {
+    color: var(--primary-Red);
 }
 
 #user-hint {
