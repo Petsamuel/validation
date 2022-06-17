@@ -78,8 +78,8 @@ main {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     gap: 15px;
     padding: 15px;
     margin: 10px 12px;
@@ -232,11 +232,6 @@ a[href="#validate"]:hover {
     }
     .text-info {
         text-align: center;
-    }
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
     }
     .top-form {
         background: var(--accent-Blue);
