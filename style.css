@@ -60,14 +60,9 @@ main {
 }
 
 .pattern {
-    grid-column: 1/2;
     color: white;
     align-self: center;
     justify-items: center;
-}
-
-.form-area {
-    grid-column: 1;
 }
 
 .form-content {
@@ -122,7 +117,6 @@ input {
     border: 1px solid var(--neutral-Grayish-Blue);
     outline: var(--accent-Blue);
     outline-offset: 4pt;
-    display: flexbox;
 }
 
 label {
@@ -255,9 +249,6 @@ a[href="#validate"]:hover {
     label {
         color: var(--primary-Red);
         font-size: x-small;
-    }
-    form input {
-        display: inline-block;
     }
 }
 
