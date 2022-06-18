@@ -27,11 +27,9 @@ body {
 }
 
 main {
+    display: flex;
     box-sizing: border-box;
-}
-
-.container {
-    padding: 10%;
+    justify-content: space-around;
 }
 
 .container-fluid {
@@ -79,9 +77,8 @@ form {
 
 form input {
     width: 100%;
-    padding-top: 15px;
     margin-top: 5px;
-    padding-bottom: 15px;
+    padding: 15px;
 }
 
 .terms>span {
@@ -226,7 +223,7 @@ a[href="#validate"]:hover {
         background: var(--Mobile-background);
     }
     .container-fluid {
-        display: block;
+        display: inline;
     }
     .pattern {
         text-align: center;
@@ -238,6 +235,7 @@ a[href="#validate"]:hover {
         text-align: center;
     }
     .top-form {
+        justify-content: center;
         background: var(--accent-Blue);
         color: white;
         padding: 10px 20px;
