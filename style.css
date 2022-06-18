@@ -192,7 +192,7 @@ a[href="#validate"] {
 }
 
 a[href="#validate"] .trial {
-    display: inline-block;
+    display: block;
     padding-top: 17px;
 }
 
@@ -248,7 +248,6 @@ a[href="#validate"]:hover {
         font-size: x-small;
     }
     input {
-        width: 100%;
         margin-top: -4px;
         height: 50px;
         border-radius: 5px;
@@ -285,7 +284,6 @@ a[href="#validate"]:hover {
 
 @media screen and (max-width:300px) {
     input {
-        width: 100%;
         margin-top: -4px;
         height: 50px;
         border-radius: 5px;
