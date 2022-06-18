@@ -244,6 +244,16 @@ a[href="#validate"]:hover {
         color: var(--primary-Red);
         font-size: x-small;
     }
+    input {
+        width: 100%;
+        margin-top: -4px;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid var(--neutral-Grayish-Blue);
+        outline: var(--accent-Blue);
+        outline-offset: 4pt;
+        padding: 15px;
+    }
 }
 
 
@@ -267,6 +277,29 @@ a[href="#validate"]:hover {
     }
     a[href="#validate"] .trial {
         font-size: 11;
+    }
+    input {
+        width: 100%;
+        margin-top: -4px;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid var(--neutral-Grayish-Blue);
+        outline: var(--accent-Blue);
+        outline-offset: 4pt;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    input {
+        width: 100%;
+        margin-top: -4px;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid var(--neutral-Grayish-Blue);
+        outline: var(--accent-Blue);
+        outline-offset: 4pt;
+        padding: 15px;
     }
 }
 
