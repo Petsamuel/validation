@@ -29,7 +29,7 @@ body {
 main {
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .container-fluid {
@@ -77,9 +77,8 @@ form {
 
 form input {
     width: 100%;
-    padding-top: 15px;
     margin-top: 5px;
-    padding-bottom: 15px;
+    padding: 15px;
 }
 
 .terms>span {
@@ -109,7 +108,6 @@ form input {
 
 input {
     margin-top: -4px;
-    padding: 20px auto;
     height: 50px;
     border-radius: 5px;
     border: 1px solid var(--neutral-Grayish-Blue);
