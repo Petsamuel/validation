@@ -222,7 +222,7 @@ a[href="#validate"]:hover {
         background: var(--Mobile-background);
     }
     .container-fluid {
-        display: inline;
+        display: inline-block;
     }
     .pattern {
         text-align: center;
@@ -257,7 +257,7 @@ a[href="#validate"]:hover {
         background: var(--Mobile-background);
     }
     .container-fluid {
-        display: block;
+        display: inline-block;
     }
     .pattern {
         text-align: center;
