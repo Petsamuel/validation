@@ -126,9 +126,28 @@ label {
     padding-top: 3px;
 }
 
+small {
+    visibility: hidden;
+    color: var(--primary-Red);
+    font-size: small;
+    position: relative;
+    margin: 20px;
+    top: -35px;
+    font-weight: bold;
+}
+
+.seprator:target input[type='email']:invalid:not(:focus)~small {
+    visibility: visible;
+}
+
 input:focus-visible {
     outline: var(--accent-Blue);
     box-shadow: 0px 1px 1px var(--accent-Blue);
+}
+
+::placeholder {
+    font-weight: 300;
+    content: attr();
 }
 
 .submitcontainer {
@@ -236,9 +255,9 @@ a[href="#validate"]:hover {
         padding: 10px 20px;
         margin: 10px auto;
     }
-    a[href="#validate"] .trial {
+    /* a[href="#validate"] .trial {
         font-size: 11;
-    }
+    } */
     label {
         color: var(--primary-Red);
         font-size: x-small;
@@ -264,9 +283,9 @@ a[href="#validate"]:hover {
     .text-info {
         text-align: center;
     }
-    a[href="#validate"] .trial {
+    /* a[href="#validate"] .trial {
         font-size: 11;
-    }
+    } */
 }
 
 
