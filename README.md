@@ -1,7 +1,6 @@
 ﻿# validation page 
--simple form validation using Css psudoClass 
+-simple form validation using Css psudoClass
 
-Made with (; by me 
 [Peter Samuel](https://github.com/Phetsamuel)<br>
 - ![](https://img.shields.io/badge/View%20Demo%20-Here-brightgreen) [Demo link](https://petsamuel.github.io/validation/)
 
